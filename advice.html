@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel = "stylesheet" type="text/css" href="css/style.css">
+
+<link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
+
+<meta charset="utf-8">
+
+<title> Buying advice page </title>
+</head>
+
+<body>
+
+<header>
+
+   <h1> It all started in Japan... </h1>
+
+</header>
+
+
+<nav id="index_ul">
+         <ul >
+		           <li>  <a  href="index.html">                        Home    </a></li>
+		   		   <li>  <a  href="gallery.html">                      Gallery </a></li>
+		   		   <li>  <a  href="tuning.html">                       Tuning  </a></li>
+		   		   <li>  <a class="current_page" href="advice.html">   Buying advice  </a></li>
+		   		   <li>  <a  href="compare.html">                      Compare models </a></li>
+		           <li>  <a  href="about.html">                        About   </a></li>
+        </ul>
+</nav>
+<hr>
+
+
+<div id="content_pane">
+
+<p> I see that <strong>YOU</strong> are looking to buy one of those beasts? Well, it ain't easy, considering their age and rarity (and <a href="#shock"> WEATHER</a> conditions) </p>
+<br>
+
+
+<h3> The following will apply to all models, <small>so choose your weapon carefully</small> </h3>
+<br>
+
+ <ul>
+   <li> <b> Engine: </b> </li>
+     <ul>
+        <li> Before 2003, <a href="230.html">230</a> engines were burning oil due to oil ring design. Look for oil leaks and smoke. </li>
+        <li> Make sure engine starts every time. Drive the car for some time and see if she is overheating or not </li>
+        <li> See who you are buying from: a youngster will most likely trash the car around so the engine will go out sooner </li>
+        <li> If you are after any of the GT-Four - a good sign is a stock intercooler. Turbotimer is a nice feature, if present </li>
+     </ul>
+
+     <li> <b> Body: </b> </li>
+             <ul>
+			    <li> Inspect the whole body for dents or traces of repair, i.e. fresh paint or brand new parts </li>
+			    <li> Check the bottom of the door seals - look out for rust </li>
+			    <li> If after <a href="165.html">165</a> - check the boot for any rust signs  </li>
+			    <li> Go for original exterior, as it will have the biggest value over time - for you and for car enthusiasts  </li>
+            </ul>
+      <li><b>  Suspension:  </b> </li>
+              <ul>
+                <li> If buying from UK or NI - do make sure there is no rust underneath </li>
+                <li> Check shock absorber rubber boots - make sure there are no holes or punctures </li>
+                  <ul id="advice_ul">
+                    <li> <strong id="advice_strong"> WARNING! </strong> - If you are buying a <a href="205.html">205</a> - make sure that Super Strut suspension is in top notch condition, because replacing it will cost around 2k euro </li>
+                  </ul>
+                <li>  <a href="185.html">185</a> is a more forgiving car, so try shocks with your own weight. See if springs are intact </li>
+                <li> For <a href="165.html">165</a> you will have to go with aftermarket solutions, because this model is out of production for a long time </li>
+                </ul>
+             </ul>
+
+
+
+   <h4 style="padding-left: 30px;"> My advice is to look out for cars in the following order: </h4>
+
+  <ol>
+   <li> ST205 - powerfull and there are plenty of parts available  </li>
+   <li> T230 - loads of well-looked after examples out there. Plenty of maintanance parts available. </li>
+   <li> ST185 - rare, powerfull and expensive. For car lovers. </li>
+   <li> ST165 - for enthusiats only. No parts or manuals available. Everything is aftermarket. </li>
+   </ol>
+
+  <hr style="border: 1px solid black;">
+
+  <br>
+
+  <img id="shock" src="images/DSC_0173.jpg" alt="itb_logo"> <br>
+
+  <p> This is my rear brake caliper. All rusted and non functional (or even <strong> DANGEROUS</strong>). This is a result of continuous salt spraying in NI and this is what you might get, if buying from UK.
+
+</div>
+
+
+
+
+<hr>
+ <footer id="footer_bar">
+           <small> Any material and information found on this website is Copyright&copy; protected</small>
+ </footer>
+
+
+<!-- Script borrowed and modified from https://getflywheel.com/layout/add-sticky-back-top-button-website/ -->
+
+<a class="back-to-top" style="display: inline;" href="#">Back to top</a>
+
+
+
+<script>
+
+jQuery(document).ready(function() {
+var offset = 100;
+var duration = 300;
+jQuery(window).scroll(function() {
+if (jQuery(this).scrollTop() > offset) {
+jQuery('.back-to-top').fadeIn(duration);
+} else {
+jQuery('.back-to-top').fadeOut(duration);
+}
+});
+
+
+jQuery('.back-to-top').click(function(event) {
+event.preventDefault();
+jQuery('html, body').animate({scrollTop: 0}, duration);
+return false;
+})
+});
+</script>
+
+</body>
+
+</html>
+

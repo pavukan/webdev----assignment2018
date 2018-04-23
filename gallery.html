@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel = "stylesheet" type="text/css" href="css/style.css">
+<link rel = "stylesheet" type="text/css" href="css/slideshow.css">
+
+<link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
+
+<meta charset="utf-8">
+
+<title> Gallery page </title>
+</head>
+
+<body>
+
+<header>
+
+   <h1> It all started in Japan... </h1>
+
+</header>
+
+
+
+<nav id="index_ul">
+         <ul>
+
+		           <li>  <a  href="index.html">  Home </a>           </li>
+		   		   <li>  <a class="current_page"  href="gallery.html">  Gallery </a>        </li>
+		   		   <li>  <a  href="tuning.html">  Tuning </a>         </li>
+		   		   <li>  <a  href="advice.html">  Buying advice </a>  </li>
+		   		   <li>  <a  href="compare.html">  Compare models </a>  </li>
+		           <li>  <a  href="about.html">  About </a>           </li>
+
+        </ul>
+
+</nav>
+
+<hr>
+
+<div class="warriors">
+    <p> <strong> A mixture of cars! Mine and not so much :D </strong> </p>
+</div>
+
+
+<!-- SLIDESHOW 1 -->
+<div class="gallery_page_container">
+
+  <!-- Images with number and text -->
+  <div class="mySlides fade">
+    <div class="numbertext"> 1 / 8 </div>
+    <img src="images/20130217_154021.jpg" alt="engine" >
+    <div class="text"> Engine compartment </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"> 2 / 8 </div>
+    <img src="images/20130217_154115.jpg" alt="interior" >
+    <div class="text"> Interior of 230 </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"> 3 / 8 </div>
+    <img src="images/DSC_0059.jpg" alt="tyre" >
+    <div class="text"> Flat tyre </div>
+  </div>
+
+  <div class="mySlides fade">
+      <div class="numbertext"> 4 / 8 </div>
+      <img src="images/DSC_0190.jpg" alt="185" >
+      <div class="text"> Nicest 185 I have seen </div>
+  </div>
+
+  <div class="mySlides fade">
+      <div class="numbertext"> 5 / 8 </div>
+      <img src="images/DSC_0191.jpg" alt="bulbs" >
+      <div class="text"> Nice headlights </div>
+  </div>
+
+  <div class="mySlides fade">
+      <div class="numbertext"> 6 / 8 </div>
+      <img src="images/DSC_0531.jpg" alt="interior205" >
+      <div class="text"> Interior of 205 </div>
+  </div>
+
+  <div class="mySlides fade">
+      <div class="numbertext"> 7 / 8 </div>
+      <img src="images/DSC_0189.jpg" alt="wheels" >
+      <div class="text"> Very rare wheels </div>
+  </div>
+
+
+
+ <div class="mySlides fade">
+	 <div class="numbertext"> 8 / 8 </div>
+	 <img src="images/p3.aleado.com72.jpg" alt="car_image" >
+	 <div class="text"> She is amazing </div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+
+<!-- JAVASCRIPT for the slidershow! Borrowed and modified from W3Schools (they were ok with that, honestly)-->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!-- JAVASCRIPT for the slidershow!-->
+
+
+<hr>
+<footer id="footer_bar">
+     <small>  Any material and information found on this website is Copyright&copy; protected   </small>
+</footer>
+
+
+<!-- Script borrowed and modified from https://getflywheel.com/layout/add-sticky-back-top-button-website/ -->
+
+<a class="back-to-top" style="display: inline;" href="#">Back to top</a>
+
+<script>
+jQuery(document).ready(function() {
+var offset = 100;
+var duration = 300;
+jQuery(window).scroll(function() {
+if (jQuery(this).scrollTop() > offset) {
+jQuery('.back-to-top').fadeIn(duration);
+} else {
+jQuery('.back-to-top').fadeOut(duration);
+}
+});
+
+jQuery('.back-to-top').click(function(event) {
+event.preventDefault();
+jQuery('html, body').animate({scrollTop: 0}, duration);
+return false;
+})
+});
+</script>
+
+
+</body>
+
+</html>
+
